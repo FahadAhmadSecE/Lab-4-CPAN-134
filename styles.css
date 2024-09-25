@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     width: 90%;
     height: fit-content;
-    border: 2px solid rgb(50, 211, 28);
+    border: 2px;
     margin: 2%;
     padding: 2%;
     background-color: #43281C;
@@ -19,7 +19,7 @@ body {
 }
 
 div, article {
-    border: 2px solid black;
+    border: 2px;
     padding: 1%;
     word-wrap: break-word;
     margin: 2%;
@@ -34,7 +34,7 @@ div, article {
     animation-direction: normal;
     animation-fill-mode: none;
     
-    transform: translateX(-150px);
+    transform: translateX();
 }
 
 div:hover {
@@ -45,7 +45,7 @@ div:hover {
 
 
 h1 {
-    border: 2px solid black;
+    border: 2px;
     padding: 1%;
     word-wrap: break-word;
     margin: 2%;
@@ -61,30 +61,49 @@ h1:hover {
     color: black;
 } 
 
+input, button {
+    background-color: #48392A;
+    color: antiquewhite;
+}
 
+button:hover {
+    background-color: #FBF2C0;
+    color: black;
+} 
+input:hover {
+    background-color: #FBF2C0;
+    color: black;
+} 
+
+input:focus {
+    background-color: rgb(247, 161, 49);
+    color: white;
+}
 .artCont {
     display: flex;
     width: 90%;
-    margin: 2%;
+    margin: 1%;
     height: 50%;
     padding:2%;
     margin: 2%;
-    border: 2px solid purple;
+    border: 2px;
     justify-content: space-between;
     background-color: #48392A;
     color: antiquewhite;
     border-radius: 10px;
 }
 
-
+a:active {
+    background-color: yellow;
+}
 
 @keyframes leftSlide {
 
     from {
-        transform: translateX(-300px);
+        transform: translateY(-300px);
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
 

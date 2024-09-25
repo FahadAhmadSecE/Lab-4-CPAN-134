@@ -19,7 +19,29 @@
 </section>
 <section class="sectionCont">
     <article  style="justify-content: space-evenly;" class="artCont">
-        <div> <img src="Flag_of_Mexico.png" width="160" height="90" alt="MexicanFlag"> </div>
+        <div> 
+            <img src="Flag_of_Mexico.png" width="160" height="90" alt="MexicanFlag"> 
+            
+
+            <label for="userInput">What flag is this?:</label>
+            <input type="text" id="userInput" required>
+            <br>
+            <button type="button" onclick="submit()">Enter Answer</button>
+            <script>
+                function submit() {
+                    const userInput = document.getElementById('userInput').value; 
+                    if (userInput.toLowerCase() === "mexico") { 
+                        alert("Correct!!");
+                    } else {
+                        alert("Wrong! The correct answer is Mexico");
+                    }
+                }
+            </script>
+
+
+
+        </div>
+
         <div> 
         The culture of Mexico is rich and colorful, characterized by vibrant festivals, traditional music, and diverse cuisines, featuring ingredients like corn, beans, and chili peppers. Mexican culture celebrates family and community, with strong ties to indigenous traditions and Catholic influences. In contrast, Zanzibar boasts a unique blend of African, Arab, and Indian influences, evident in its music, dance, and architecture. The islands are known for their spice trade, reflected in flavorful dishes like biryani and seafood. Both cultures prioritize hospitality, showcasing their warmth and generosity through communal gatherings, storytelling, and celebrations that honor their histories and heritage.</div>
         <div> <img src="Flag_of_Zanzibar.png" width="160" height="90" alt="ZanzibarianFlag"> </div>
@@ -30,11 +52,11 @@
         <div> 
             My top 5 favorite videogames are:
             <ol>
-                <li> Destiny </li>
-                <li> Warframe </li>
-                <li> Celeste </li>
-                <li> Stardew Valley </li>
-                <li> Hollow Knight</li>
+                <li> <a href="https://www.bungie.net/7/en/destiny">Destiny</a>  </li>
+                <li> <a href="https://www.warframe.com/landing">Warframe </a></li>
+                <li> <a href="https://dead-cells.com/">Dead Cells </a></li>
+                <li> <a href="https://terraria.org/">Terraria</a> </li>
+                <li> <a href="https://www.minecraft.net/en-us">minecraft</a></li>
             </ol>
         </div>
         <div><iframe src="https://giphy.com/embed/fu2EmbQN78PViPNZbi" width="240" height="240" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></a></div>
